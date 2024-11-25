@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.big-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content h2 {
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.big-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set minimum width */
+    gap: 16px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.small-box {
+    background-color: #e0e0e0;
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 4px;
+    text-align: center;
+    height: 250px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.small-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.small-box h3 {
+    margin: 10px 0; /* Space between title and paragraph */
+    color: #333;
+}
+
+.small-box p {
+    flex-grow: 1; /* Allow paragraph to take up available space */
+    color: #555;
+    margin: 0;
+}
+
+.booking-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.booking-button:hover {
+    background-color: #218838;
+}
